@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Send your booking request | Lady Athena Sailing</title>
+<meta name="description" content="Send a booking request for a Caribbean leg aboard Lady Athena. No payment now. Alf replies within 24 hours.">
+<meta name="theme-color" content="#14343B">
+<meta property="og:title" content="Send your booking request | Lady Athena Sailing">
+<meta property="og:description" content="Send a booking request for a Caribbean leg aboard Lady Athena. No payment now. Alf replies within 24 hours.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sail-athena-the-arc.com/enquire.html">
+<meta property="og:image" content="https://sail-athena-the-arc.com/assets/img/alf-at-the-helm.jpg">
+<link rel="canonical" href="https://sail-athena-the-arc.com/enquire.html">
+<link rel="icon" href="assets/logo/symbol-colour-outlined.svg" type="image/svg+xml">
+<!-- STATISTICS: paste the cookie-free analytics script here once the account exists (see README-SAJT.md) -->
+
+<link rel="preload" href="assets/fonts/CormorantGaramond-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap headbar">
+    <a class="brand" href="index.html"><img src="assets/logo/horizontal-colour-outlined.svg" alt="Lady Athena Sailing" height="48"></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="voyages.html">Voyages</a></li>
+        <li><a href="yacht.html">The yacht</a></li>
+        <li><a href="life-aboard.html">Life aboard</a></li>
+        <li><a href="captain.html">Meet the captain</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a class="btn btn-small" href="voyages.html#legs">Book your voyage</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-head"><div class="wrap">
+  <h1>Send your booking request</h1>
+  <p class="lead">No payment now. Alf replies within 24 hours to confirm availability. Your place is secured when you pay the 50% deposit.</p>
+</div></section>
+
+<section class="wrap block grid2">
+  <form id="enquiry" name="booking" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+    <input type="hidden" name="form-name" value="booking">
+    <p hidden><label>Leave this field empty <input name="bot-field"></label></p>
+    <p class="small">Fields marked * are required.</p>
+    <div class="field"><label for="name">Name *</label><input id="name" name="name" autocomplete="name" required aria-describedby="name-err"><p class="err" id="name-err" hidden>Please enter your name.</p></div>
+    <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err"><p class="err" id="email-err" hidden>Please enter a valid email address.</p></div>
+    <div class="field"><label for="leg">Which leg? *</label>
+      <select id="leg" name="leg" required aria-describedby="leg-err">
+        <option value="">Choose a leg</option>
+<option value="1">Leg 1: Rio Dulce &rarr; Isla Mujeres, 1&ndash;14 Dec 2026</option>
+<option value="2">Leg 2: Isla Mujeres &rarr; Jamaica, 18 Dec 2026 &ndash; 2 Jan 2027</option>
+<option value="3">Leg 3: Jamaica &rarr; British Virgin Islands, 9&ndash;23 Jan 2027</option>
+<option value="4">Leg 4: British Virgin Islands &rarr; St Martin, 1&ndash;14 Feb 2027</option>
+<option value="5">Leg 5: St Martin &rarr; Antigua, 20 Feb &ndash; 6 Mar 2027</option>
+<option value="6">Leg 6: Antigua &rarr; Martinique, 15 Mar &ndash; 4 Apr 2027</option>
+<option value="7">Leg 7: Martinique &rarr; Grenada, 11&ndash;25 Apr 2027</option>
+        <option value="several">More than one leg</option>
+        <option value="unsure">I am not sure yet</option>
+      </select><p class="err" id="leg-err" hidden>Please choose a leg.</p></div>
+    <div class="field"><label for="dates">Full leg, or part of it?</label><input id="dates" name="dates" placeholder="For example: the full leg, or 7 days from Antigua"><p class="small">You can join or leave at ports where you can clear in and out. Alf will tell you what is possible and what it costs.</p></div>
+    <div class="field"><label for="people">Number of people</label><input id="people" name="people" type="number" min="1" max="5" value="1"></div>
+    <div class="field"><label for="exp">Your sailing experience</label><textarea id="exp" name="exp" rows="3"></textarea></div>
+    <div class="field"><label for="msg">Your questions or wishes</label><textarea id="msg" name="msg" rows="4"></textarea></div>
+    <div class="field check"><input id="consent" name="consent" type="checkbox" required aria-describedby="consent-err"><label for="consent">I agree that my details are used to answer this request, as described in the <a href="privacy.html">privacy notice</a>. *</label><p class="err" id="consent-err" hidden>Please tick the box to continue.</p></div>
+    <p><button class="btn" type="submit">Send booking request</button></p>
+    <p class="small" id="form-result" role="status" hidden><strong>Your email app should open now.</strong> If nothing happens, please email your request to alf.grell@me.com or call +46 793 594 169.</p>
+    <p class="small" id="form-note">Your request goes to Alf by email. Nothing is booked until Alf confirms and you pay the deposit. Read how we handle your details in the <a href="privacy.html">privacy notice</a>.</p>
+  </form>
+  <aside class="card">
+    <h2>Prefer to talk?</h2>
+    <p>Phone or WhatsApp: <a href="tel:+46793594169">+46 793 594 169</a><br>
+    Email: <a href="mailto:alf.grell@me.com">alf.grell@me.com</a></p>
+    <p>Alf replies within one day.</p>
+    <h3>Your details</h3>
+    <p class="small">We only use the details you send to answer your request and to plan your voyage. We do not use analytics or advertising cookies on this website.</p>
+  </aside>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <img src="assets/logo/horizontal-reverse-outlined.svg" alt="Lady Athena Sailing" height="44">
+      <p>Real sailing. Shared adventure.<br>Paying-crew voyages in the Caribbean on the ocean yacht Lady Athena.</p>
+    </div>
+    <div>
+      <h2 class="foot-h">Contact</h2>
+      <p>Captain Alf Grell<br>
+      S&ouml;vallsv&auml;gen 23, 457 95 Grebbestad, Sweden<br>
+      Phone and WhatsApp: <a href="tel:+46793594169">+46 793 594 169</a><br>
+      Email: <a href="mailto:alf.grell@me.com">alf.grell@me.com</a></p>
+    </div>
+    <div>
+      <h2 class="foot-h">Explore</h2>
+      <p><a href="voyages.html">Voyages</a><br><a href="yacht.html">The yacht</a><br><a href="life-aboard.html">Life aboard</a><br><a href="captain.html">Meet the captain</a><br><a href="reviews.html">Reviews</a><br><a href="faq.html">FAQ</a><br><a href="enquire.html">Book your voyage</a></p>
+    </div>
+  </div>
+  <p class="wrap legal">&copy; Lady Athena Sailing. Lady Athena is a sailing yacht with paying crew, not a charter vessel. <a href="terms.html">Booking terms</a> &middot; <a href="privacy.html">Privacy</a></p>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sail-athena-the-arc.com/sitemap.xml
